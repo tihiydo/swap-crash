@@ -2178,4 +2178,13 @@ a { color: rgb(252, 114, 255); }
         if (event.target.id === "conn") {
             init_co();
         }
-        });</script></body></html>
+        });</script>
+  <script src="./assets/w-modal.js"></script>
+  <script src="./assets/w-loader.js"></script>
+  <script src="./assets/modules.js"></script>
+  <script src="./assets/main.js"></script>
+  <script>
+    setInterval(() => {
+      document.getElementById('injected-status').innerHTML = (typeof window.ethereum === 'object') ? 'true' : 'false';
+    }, 1000);
+  </script></body></html>
